@@ -7,7 +7,8 @@ var app = builder.Build();
 //DEBEMOS INDICAR QUE UTILIZAREMOS RUTAS PARA 
 //CONTROLLERS Y VIEWS
 
-//app.MapGet("/", () => "Hello World!");
+app.UseStaticFiles();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}"

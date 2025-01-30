@@ -1,3 +1,37 @@
-﻿<h1 style="color:fuchsia">
+﻿@section imagenhome {
+    <img src="~/images/31_user.jpg"
+    style="width: 350px; height: 250px"/>
+}
+
+@section styles {
+    <style>
+        h2 {
+            background-color: yellow
+        }
+    </style>
+}
+
+@section scripts {
+    <script>
+        $(document).ready(function() {
+            $("#botonvista").click(function()  {
+                $("#mensajevista").text("Botón de pulsado en Juernes!!!");
+            })
+        })
+    </script>
+}
+
+
+
+
+<h2 style="color:fuchsia">
     Estas en casa...
+</h2>
+
+<h1 style="color:blue" id="mensajevista">
+    Mensaje en Vista
 </h1>
+
+<button class="btn btn-warning" id="botonvista">
+    Pulsar en Vista
+</button>
